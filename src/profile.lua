@@ -278,8 +278,8 @@
         ["fontSize"] = 13,
         ["panels"] = {
             ["LeftChatDataPanel"] = {
-                [1] = "",
-                [2] = "",
+                [1] = "Friends",
+                [2] = "Guild",
                 [3] = "System",
                 ["left"] = "Friends",
                 ["middle"] = "Guild",
@@ -292,7 +292,7 @@
             },
             ["RightChatDataPanel"] = {
                 [1] = "Durability",
-                [2] = "Bags",
+                [2] = "Item Level",
                 [3] = "Currencies",
                 ["left"] = "Bags",
                 ["middle"] = "Durability",
@@ -305,6 +305,9 @@
             ["font"] = "Expressway",
         },
         ["bottomPanel"] = false,
+        ["customGlow"] = {
+            ["style"] = "Action Button Glow",
+        },
         ["font"] = "Expressway",
         ["fontSize"] = 13,
         ["itemLevel"] = {
@@ -714,6 +717,7 @@
                     ["text_format"] = "",
                 },
                 ["spacing"] = 10,
+                ["threatStyle"] = "GLOW",
                 ["width"] = 250,
             },
             ["focus"] = {
