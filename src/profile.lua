@@ -215,10 +215,16 @@
         ["countFont"] = "Expressway",
         ["countFontOutline"] = "OUTLINE",
         ["countFontSize"] = 13,
+        ["itemInfo"] = false,
+        ["itemInfoFont"] = "Expressway",
+        ["itemInfoFontOutline"] = "NONE",
         ["itemLevelFont"] = "Expressway",
         ["itemLevelFontOutline"] = "OUTLINE",
         ["itemLevelFontSize"] = 13,
         ["junkIcon"] = true,
+        ["split"] = {
+            ["player"] = true,
+        },
     },
     ["chat"] = {
         ["fade"] = false,
@@ -345,7 +351,7 @@
         ["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-276,213",
         ["DebuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-280,-30",
         ["DigSiteProgressBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,423,50",
-        ["DurabilityFrameMover"] = "TOP,UIParent,TOP,228,-253",
+        ["DurabilityFrameMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-511,30",
         ["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,30",
         ["ElvAB_3"] = "TOPLEFT,ElvUIParent,TOPLEFT,432,-87",
         ["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,0,138",
@@ -377,7 +383,7 @@
         ["MicrobarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-30,-1",
         ["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-30,-30",
         ["MirrorTimer3Mover"] = "TOP,ElvUIParent,TOP,0,-132",
-        ["ObjectiveFrameMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-81,-332",
+        ["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-70,-310",
         ["PetAB"] = "BOTTOM,UIParent,BOTTOM,-394,30",
         ["ReputationBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,189",
         ["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-30,30",
@@ -390,7 +396,7 @@
         ["VOICECHAT"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,30,271",
         ["VehicleLeaveButton"] = "BOTTOM,UIParent,BOTTOM,403,404",
         ["VehicleSeatMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-280,-164",
-        ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,350",
+        ["ZoneAbility"] = "BOTTOM,ElvUIParent,BOTTOM,0,380",
     },
     ["nameplates"] = {
         ["colors"] = {
@@ -403,9 +409,15 @@
         ["statusbar"] = "Minimalist",
         ["units"] = {
             ["ENEMY_NPC"] = {
+                ["buffs"] = {
+                    ["countFont"] = "Expressway",
+                },
                 ["castbar"] = {
                     ["font"] = "Expressway",
                     ["fontSize"] = 10,
+                },
+                ["debuffs"] = {
+                    ["countFont"] = "Expressway",
                 },
                 ["eliteIcon"] = {
                     ["enable"] = true,
@@ -430,8 +442,19 @@
                     ["xOffset"] = -1,
                     ["yOffset"] = -8,
                 },
+                ["power"] = {
+                    ["text"] = {
+                        ["font"] = "Expressway",
+                    },
+                },
                 ["questIcon"] = {
-                    ["xOffset"] = -2,
+                    ["font"] = "Expressway",
+                    ["fontSize"] = 11,
+                    ["textPosition"] = "RIGHT",
+                    ["xOffset"] = -4,
+                },
+                ["title"] = {
+                    ["font"] = "Expressway",
                 },
             },
             ["ENEMY_PLAYER"] = {
@@ -492,7 +515,12 @@
                     ["yOffset"] = -12,
                 },
                 ["questIcon"] = {
-                    ["xOffset"] = -2,
+                    ["font"] = "Expressway",
+                    ["fontSize"] = 11,
+                    ["xOffset"] = -4,
+                },
+                ["title"] = {
+                    ["font"] = "Expressway",
                 },
             },
             ["FRIENDLY_PLAYER"] = {
@@ -691,7 +719,7 @@
                         ["fontOutline"] = "NONE",
                         ["justifyH"] = "LEFT",
                         ["size"] = 13,
-                        ["text_format"] = "[name:custom:abbreviate]",
+                        ["text_format"] = "[vivify:name:default]",
                         ["xOffset"] = 4,
                         ["yOffset"] = 1,
                     },
@@ -923,7 +951,7 @@
                         ["fontOutline"] = "NONE",
                         ["justifyH"] = "LEFT",
                         ["size"] = 13,
-                        ["text_format"] = "[name:custom:abbreviate:short]",
+                        ["text_format"] = "[vivify:name:short]",
                         ["xOffset"] = 5,
                         ["yOffset"] = 1,
                     },
@@ -1043,7 +1071,6 @@
                     ["xOffsetText"] = 3,
                     ["xOffsetTime"] = -3,
                     ["yOffsetText"] = 1,
-                    ["yOffsetTime"] = 1,
                 },
                 ["classbar"] = {
                     ["autoHide"] = true,
@@ -1437,10 +1464,10 @@
                         ["font"] = "Expressway",
                         ["fontOutline"] = "NONE",
                         ["justifyH"] = "LEFT",
-                        ["size"] = 14,
+                        ["size"] = 12,
                         ["text_format"] = "[level] [classification] [npctitle]",
                         ["xOffset"] = 6,
-                        ["yOffset"] = 0,
+                        ["yOffset"] = 1,
                     },
                     ["mob-health"] = {
                         ["attachTextTo"] = "Health",
@@ -1460,7 +1487,7 @@
                         ["fontOutline"] = "NONE",
                         ["justifyH"] = "LEFT",
                         ["size"] = 13,
-                        ["text_format"] = "[name:custom:abbreviate]",
+                        ["text_format"] = "[vivify:name:default]",
                         ["xOffset"] = 6,
                         ["yOffset"] = 1,
                     },
@@ -1561,7 +1588,7 @@
                         ["fontOutline"] = "NONE",
                         ["justifyH"] = "LEFT",
                         ["size"] = 13,
-                        ["text_format"] = "[name:custom:abbreviate:short]",
+                        ["text_format"] = "[vivify:name:short]",
                         ["xOffset"] = 6,
                         ["yOffset"] = 1,
                     },
