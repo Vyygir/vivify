@@ -16,7 +16,7 @@
             ["description"] = "",
             ["events"] = "UNIT_NAME_UPDATE",
             ["func"] = "function(unit)\n    local name = UnitName(unit)\n    \n    if name and string.len(name) > _VARS['vivify:name:default'] then\n        return name:sub(1, _VARS['vivify:name:default'])..'...' \n    end\n    \n    return name\nend",
-            ["vars"] = 22,
+            ["vars"] = 21,
         },
         ["vivify:name:short"] = {
             ["category"] = "",
