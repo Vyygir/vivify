@@ -321,7 +321,6 @@
         },
         ["loginmessage"] = false,
         ["minimap"] = {
-            ["locationFont"] = "Expressway",
             ["locationFontOutline"] = "NONE",
             ["locationText"] = "SHOW",
             ["size"] = 238,
@@ -345,7 +344,7 @@
         ["AzeriteBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,205",
         ["BNETMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,31,321",
         ["BelowMinimapContainerMover"] = "TOP,UIParent,TOP,342,-361",
-        ["BossButton"] = "BOTTOM,ElvUIParent,BOTTOM,0,440",
+        ["BossButton"] = "BOTTOM,UIParent,BOTTOM,0,455",
         ["BossHeaderMover"] = "TOP,ElvUIParent,TOP,0,-55",
         ["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-280,-30",
         ["ClassBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-276,213",
@@ -364,8 +363,8 @@
         ["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-394,212",
         ["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-154,200",
         ["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-154,212",
-        ["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,30,-30",
-        ["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,30,-30",
+        ["ElvUF_Raid1Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,30,-30",
+        ["ElvUF_Raid3Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,30,-30",
         ["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
         ["ElvUF_TankMover"] = "TOPLEFT,UIParent,TOPLEFT,604,-362",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,155,200",
@@ -543,7 +542,7 @@
         ["colorAlpha"] = 1,
         ["cursorAnchor"] = true,
         ["font"] = "Expressway",
-        ["headerFontSize"] = 13,
+        ["headerFont"] = "Expressway",
         ["healthBar"] = {
             ["font"] = "Expressway",
             ["fontOutline"] = "NONE",
@@ -587,7 +586,6 @@
         ["font"] = "Expressway",
         ["fontOutline"] = "NONE",
         ["fontSize"] = 12,
-        ["smartRaidFilter"] = false,
         ["smoothbars"] = true,
         ["statusbar"] = "Minimalist",
         ["units"] = {
@@ -1175,7 +1173,7 @@
                 },
                 ["width"] = 304,
             },
-            ["raid"] = {
+            ["raid1"] = {
                 ["buffs"] = {
                     ["anchorPoint"] = "RIGHT",
                     ["clickThrough"] = true,
@@ -1316,7 +1314,7 @@
                 ["verticalSpacing"] = 8,
                 ["width"] = 160,
             },
-            ["raid40"] = {
+            ["raid3"] = {
                 ["buffs"] = {
                     ["anchorPoint"] = "RIGHT",
                     ["clickThrough"] = true,
