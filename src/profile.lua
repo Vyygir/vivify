@@ -222,6 +222,7 @@
         ["itemLevelFontOutline"] = "OUTLINE",
         ["itemLevelFontSize"] = 13,
         ["junkIcon"] = true,
+        ["showBindType"] = true,
         ["split"] = {
             ["player"] = true,
         },
@@ -237,11 +238,12 @@
         ["panelTabTransparency"] = true,
         ["panelWidth"] = 460,
         ["panelWidthRight"] = 460,
-        ["separateSizes"] = true,
         ["tabFont"] = "Expressway",
         ["tabFontSize"] = 13,
+        ["tabSelectedTextEnabled"] = false,
         ["tabSelector"] = "NONE",
         ["timeStampFormat"] = "%H:%M ",
+        ["timeStampLocalTime"] = true,
     },
     ["convertPages"] = true,
     ["cooldown"] = {
@@ -257,6 +259,10 @@
             ["width"] = 536,
         },
         ["colors"] = {
+            ["experience"] = {
+                ["a"] = 0.80000001192093,
+                ["g"] = 0.40000003576279,
+            },
             ["quest"] = {
                 ["a"] = 1,
                 ["b"] = 0.13725490196078,
@@ -265,6 +271,7 @@
             },
         },
         ["experience"] = {
+            ["font"] = "Expressway",
             ["orientation"] = "HORIZONTAL",
             ["width"] = 460,
         },
@@ -281,11 +288,10 @@
     },
     ["datatexts"] = {
         ["font"] = "Expressway",
-        ["fontSize"] = 13,
         ["panels"] = {
             ["LeftChatDataPanel"] = {
-                [1] = "Friends",
-                [2] = "Guild",
+                [1] = "Location",
+                [2] = "Mail",
                 [3] = "System",
                 ["left"] = "Friends",
                 ["middle"] = "Guild",
@@ -298,7 +304,7 @@
             },
             ["RightChatDataPanel"] = {
                 [1] = "Durability",
-                [2] = "Item Level",
+                [2] = "Bags",
                 [3] = "Currencies",
                 ["left"] = "Bags",
                 ["middle"] = "Durability",
@@ -369,7 +375,7 @@
         ["ElvUF_TankMover"] = "TOPLEFT,UIParent,TOPLEFT,604,-362",
         ["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,155,200",
         ["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,155,212",
-        ["ElvUF_TargetTargetMover"] = "BOTTOM,UIParent,BOTTOM,394,213",
+        ["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,394,212",
         ["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-30,312",
         ["ElvUIBankMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-498,312",
         ["ExperienceBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,30,302",
@@ -426,6 +432,7 @@
                     ["yOffset"] = 5,
                 },
                 ["health"] = {
+                    ["height"] = 12,
                     ["text"] = {
                         ["font"] = "Expressway",
                         ["format"] = "",
@@ -433,13 +440,15 @@
                 },
                 ["level"] = {
                     ["font"] = "Expressway",
+                    ["fontSize"] = 12,
                     ["xOffset"] = 4,
-                    ["yOffset"] = -8,
+                    ["yOffset"] = -5,
                 },
                 ["name"] = {
                     ["font"] = "Expressway",
+                    ["fontSize"] = 12,
                     ["xOffset"] = -1,
-                    ["yOffset"] = -8,
+                    ["yOffset"] = -5,
                 },
                 ["power"] = {
                     ["text"] = {
@@ -467,6 +476,8 @@
                 },
                 ["health"] = {
                     ["text"] = {
+                        ["enable"] = false,
+                        ["font"] = "Expressway",
                         ["format"] = "",
                     },
                 },
@@ -548,6 +559,8 @@
             ["fontOutline"] = "NONE",
             ["text"] = false,
         },
+        ["itemQuality"] = true,
+        ["modifierID"] = "SHIFT",
         ["smallTextFontSize"] = 13,
         ["textFontSize"] = 13,
     },
@@ -858,7 +871,7 @@
                     ["xOffset"] = -3,
                     ["yOffset"] = 0,
                 },
-                ["verticalSpacing"] = 36,
+                ["verticalSpacing"] = 20,
                 ["width"] = 250,
             },
             ["pet"] = {
@@ -1150,9 +1163,12 @@
                     ["yOffset"] = 18,
                 },
                 ["portrait"] = {
+                    ["camDistanceScale"] = 1.51,
                     ["enable"] = true,
-                    ["style"] = "2D",
+                    ["style"] = "Class",
                     ["width"] = 60,
+                    ["xOffset"] = 0.09,
+                    ["yOffset"] = 0.04,
                 },
                 ["power"] = {
                     ["attachTextTo"] = "Power",
@@ -1163,8 +1179,9 @@
                     ["yOffset"] = 1,
                 },
                 ["raidRoleIcons"] = {
+                    ["scale"] = 1.5,
                     ["xOffset"] = 2,
-                    ["yOffset"] = -9,
+                    ["yOffset"] = 0,
                 },
                 ["raidicon"] = {
                     ["size"] = 20,

@@ -26,6 +26,13 @@
             ["vars"] = 15,
         },
     },
+    ["datatexts"] = {
+        ["settings"] = {
+            ["Location"] = {
+                ["showSubZone"] = false,
+            },
+        },
+    },
     ["general"] = {
         ["commandBarSetting"] = "DISABLED",
         ["mapAlphaWhenMoving"] = 0.6,
