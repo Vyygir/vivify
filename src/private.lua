@@ -3,7 +3,6 @@
         ["chatBubbleFont"] = "Expressway",
         ["chatBubbleFontSize"] = 10,
         ["chatBubbleName"] = true,
-        ["chatBubbles"] = "backdrop_noborder",
         ["minimap"] = {
             ["hideCalendar"] = false,
         },
